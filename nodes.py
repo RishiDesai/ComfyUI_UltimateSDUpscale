@@ -2,7 +2,7 @@
 
 import logging
 import torch
-import comfy
+import ComfyUI.comfy as comfy
 from usdu_patch import usdu
 from utils import tensor_to_pil, pil_to_tensor
 from modules.processing import StableDiffusionProcessing

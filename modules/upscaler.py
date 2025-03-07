@@ -1,7 +1,7 @@
 from PIL import Image
-from utils import tensor_to_pil, pil_to_tensor
-from comfy_extras.nodes_upscale_model import ImageUpscaleWithModel
-from modules import shared
+from ComfyUI_UltimateSDUpscale.utils import tensor_to_pil, pil_to_tensor
+from ComfyUI.comfy_extras.nodes_upscale_model import ImageUpscaleWithModel
+from ComfyUI_UltimateSDUpscale.modules import shared
 
 if (not hasattr(Image, 'Resampling')):  # For older versions of Pillow
     Image.Resampling = Image

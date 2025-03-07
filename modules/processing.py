@@ -1,12 +1,12 @@
 from PIL import Image, ImageFilter
 import torch
 import math
-from nodes import common_ksampler, VAEEncode, VAEDecode, VAEDecodeTiled
-from comfy_extras.nodes_custom_sampler import SamplerCustom
-from utils import pil_to_tensor, tensor_to_pil, get_crop_region, expand_crop, crop_cond
-from modules import shared
+from ComfyUI.nodes import common_ksampler, VAEEncode, VAEDecode, VAEDecodeTiled
+from ComfyUI.comfy_extras.nodes_custom_sampler import SamplerCustom
+from ComfyUI_UltimateSDUpscale.utils import pil_to_tensor, tensor_to_pil, get_crop_region, expand_crop, crop_cond
+from ComfyUI_UltimateSDUpscale.modules import shared
 from tqdm import tqdm
-import comfy
+import ComfyUI.comfy as comfy
 from enum import Enum
 import json
 import os
